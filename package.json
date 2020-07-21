@@ -13,6 +13,7 @@
         "@microsoft/microsoft-graph-client": "^1.4.0",
         "bluebird": "^3.5.3",
         "bluebird-retry": "^0.11.0",
+        "dotenv": "^8.2.0",
         "csv": "^5.1.1",
         "csv-parser": "^2.2.0",
         "deep-diff": "^1.0.2",
