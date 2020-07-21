@@ -19,12 +19,16 @@ const SlackWebhook = require('slack-webhook');
 const notifier = require('node-notifier');
 
 
-// fill in with your things
-let token = '';
-const teamsurl = 'https://outlook.office.com/webhook/WEBHOokherechangeme';
-const slackurl = 'https://hooks.slack.com/services/URLTHINGHERE';
-const file = 'data.json';
+const dotenv = require('dotenv');
 
+dotenv.config();
+
+
+// fill in with your things
+let token = process.env.TOKEN || '';
+const teamsurl = process.env.TEAMSURL;
+const slackurl = process.env.SLACKURL;
+const file = process.env.DATAFILE;
 
 const slack = new SlackWebhook(slackurl);
 
