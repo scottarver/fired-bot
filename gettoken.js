@@ -1,6 +1,10 @@
 const puppeteer = require('puppeteer');
-const username = '';
-const password = '';
+const dotenv = require('dotenv');
+
+dotenv.config();
+
+const username = process.env.USERNAME;
+const password = process.env.PASSWORD;
 
 console.log('starting');
 
