@@ -1,6 +1,10 @@
 const puppeteer = require('puppeteer');
+const dotenv = require('dotenv');
 
-const jobsurl = '';
+dotenv.config();
+
+const jobsurl = process.env.JOBSURL;
+
 console.log('starting');
 
 module.exports = async function getJobs(){
