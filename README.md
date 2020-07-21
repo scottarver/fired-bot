@@ -1,1 +1,1 @@
-# firef-bot
+# fired-bot
